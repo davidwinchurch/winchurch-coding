@@ -4,8 +4,7 @@
   "description": "Teaching the family the basics of coding",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "concurrently \"nodemon\" \"browser-sync start --config bs-config.js\""
+    "dev": "eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -17,12 +16,7 @@
     "url": "https://github.com/davidwinchurch/winchurch-coding/issues"
   },
   "homepage": "https://github.com/davidwinchurch/winchurch-coding#readme",
-  "dependencies": {
-    "express": "^4.19.2"
-  },
   "devDependencies": {
-    "browser-sync": "^3.0.2",
-    "concurrently": "^8.2.2",
-    "nodemon": "^3.1.1"
+    "@11ty/eleventy": "^2.0.1"
   }
 }
